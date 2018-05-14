@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.udacity.popular_movies.DetailActivity"
+    android:background="@drawable/mypattern"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/imgMargin"
+            android:layout_marginRight="@dimen/imgMargin"
+            android:layout_marginTop="@dimen/imgMargin"
+            android:contentDescription="@string/default_movie_description"
+            />
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding"
+            android:textSize="@dimen/txtSize"
+            />
+
+        <TextView
+            android:id="@+id/detailDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/txtPadding"
+            android:paddingTop="@dimen/txtPadding"
+            android:textSize="@dimen/txtSize"
+            />
+
+        <TextView
+            android:id="@+id/detailRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/txtPadding"
+            android:paddingTop="@dimen/txtPadding"
+            android:textSize="@dimen/txtSize"
+            />
+
+        <TextView
+            android:id="@+id/detailOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/txtPadding"
+            android:paddingTop="@dimen/txtPadding"
+            android:paddingBottom="@dimen/txtPadding"
+            android:textSize="@dimen/txtSize"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
